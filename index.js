@@ -141,6 +141,13 @@ document.querySelector('.icon-quit').addEventListener('click', function () {
   }
 })
 
+document.addEventListener('keydown', function (event) {
+  if (event.keyCode === 27 && window.innerWidth <= 1120) {
+    leftSidebar.style.transform = 'translateX(-360px)'
+    layerOpacity.classList.remove('left-sidebar')
+  }
+})
+
 layerOpacity.addEventListener('click', function () {
   if (window.innerWidth <= 1120) {
     layerOpacity.classList.remove('left-sidebar')

@@ -485,6 +485,7 @@ body {
   .good-list {
     list-style: none;
     min-width: 720px;
+    max-width: 1300px;
     display: grid;
     padding: 0;
     margin-top: 24px;
@@ -712,6 +713,11 @@ body {
     border-radius: 5px;
     margin-right: 28.65px;
     border-radius: 5px;
-    
+    margin-left: 10px;
   }
+}
+@media (min-width: 1440px) { 
+  .img-cps {
+  max-width: 700px;
+}
 }
